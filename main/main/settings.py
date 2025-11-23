@@ -14,7 +14,14 @@ from pathlib import Path
 
 import os
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    'crud-deploy-swzu.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
+
 
 
 
